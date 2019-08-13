@@ -61,5 +61,9 @@ class Song
   def self.destroy_all
     self.all.clear
   end
+  
+  def self.alphabetical
+    self.all.sort_by{|s| s.name}
+  end
 
 end
